@@ -66,44 +66,4 @@ This analysis demonstrates how SQL can transform raw automobile data into action
 🎓 300-Level Statistics Student
 
 💼 Intern at BT-HUB Zaria
-📄 Key SQL Queries
-Data Exploration
-SELECT * FROM sakila.`bmw cars`;
-DESC TABLE sakila.`bmw cars`;
-SELECT DISTINCT Model FROM sakila.`bmw cars`;
 
-Data Cleaning
-SELECT Model, COUNT(*) AS duplicate_count
-FROM sakila.`bmw cars`
-GROUP BY Model
-HAVING COUNT(*) > 1;
-
-DELETE FROM sakila.`bmw cars`
-WHERE ID NOT IN (
-  SELECT MIN(ID)
-  FROM sakila.`bmw cars`
-  GROUP BY Model
-);
-
-Analysis Queries
--- Average Price by Model
-SELECT Model, AVG(Price) AS Average_Price 
-FROM sakila.`bmw cars`
-GROUP BY Model
-ORDER BY Average_Price DESC;
-
--- Average Mileage by Year
-SELECT Year, AVG(Mileage_KM) AS Average_Mileage 
-FROM sakila.`bmw cars`
-GROUP BY Year
-ORDER BY Year DESC;
-
--- Total Sales by Region
-SELECT Region, SUM(Sales) AS Total_Sale 
-FROM sakila.`bmw cars`
-GROUP BY Region
-ORDER BY Total_Sale DESC;
-
--- Profit Gain
-SELECT SUM(Price - Sales) AS Profit_Gain 
-FROM sakila.`bmw cars`;
