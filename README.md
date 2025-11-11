@@ -14,6 +14,7 @@ Analyze key performance indicators (KPIs) such as:
 
 Average price by car model.
 
+![a display of results](result.png)
 Average mileage by year.
 
 Total sales and total price by region.
