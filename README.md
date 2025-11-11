@@ -64,6 +64,7 @@ This analysis demonstrates how SQL can transform raw automobile data into action
 👤 Abdurrahman Uthman
 
 🎓 300-Level Statistics Student
+  Ahmadu Bello University.
+  
 
-💼 Intern at BT-HUB Zaria
 
